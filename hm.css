@@ -1,0 +1,226 @@
+/* Set the font of the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a flex layout, padding, and colors */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Remove the bullet points from the list in the navigation and display it as a row */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Add some margin to the right of each list item in the navigation */
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Style the links in the navigation */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style various buttons and the submit input across different sections of the site */
+.auth button,
+.welcome button,
+.forum button,
+.login input[type=submit],
+.login button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    /* Rounded edges */
+}
+
+/* Define the hover effect for the same buttons and submit input */
+.auth button:hover,
+.welcome button:hover,
+.forum button:hover,
+.login input[type=submit]:hover,
+.login button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Style the text input in the auth section */
+.auth input[type=text] {
+    padding: 6px;
+    margin-top: 16px;
+    font-size: 17px;
+    border: none;
+}
+
+/* Style the welcome section with a background image, text color, text alignment, padding, and margin */
+.welcome {
+    background: url('logo.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 110px;
+    margin: 20px;
+}
+
+/* Style the paragraph in the welcome section */
+.welcome p {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Style the forum section with a background color, padding, and margin */
+.forum {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Add some margin to the top of the forum section */
+.forum-section {
+    margin-top: 20px;
+}
+
+/* Style the h2 element in the forum section */
+.forum-section h2 {
+    color: #ff0000;
+}
+
+/* Remove the bullet points from the list in the forum section */
+.forum-section ul {
+    list-style-type: none;
+}
+
+/* Add some margin to the bottom of each list item in the forum section */
+.forum-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Style the links in the forum section */
+.forum-section ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Style the form in the login section with a flex layout, padding, and colors */
+.login form {
+    background-color: #b4b4b4;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the elements in the form */
+}
+
+/* Style the label in the login form */
+.login label {
+    font-size: 16px;
+}
+
+/* Style the text input fields in the login form */
+.login input[type=text],
+.login input[type=password] {
+    width: 80%;
+    /* Decrease the width of the text input fields */
+    padding: 10px;
+    /* Decrease the padding of the text input fields */
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f0f0f0;
+}
+
+/* Style the submit input in the login form */
+.login input[type=submit] {
+    background-color: #ff0000;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    /* Match the width of the text input fields */
+    opacity: 0.9;
+    border-radius: 12px;
+    /* Rounded edges */
+}
+
+/* Define the hover effect for the submit input in the login form */
+.login input[type=submit]:hover {
+    opacity: 1;
+}
+
+/* Style the Register Now button in the login form */
+.login button {
+    width: 80%;
+    /* Increase the width of the Register Now button */
+    padding: 20px 32px;
+    /* Increase the padding of the Register Now button */
+}
+
+/* Style the modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Style the modal content/box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the close button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Define the hover and focus effects for the close button */
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
